@@ -112,4 +112,30 @@
 .flex-container__row {
   margin-top: 70px; }
 
+.hola {
+  color: red; }
+
+@media (max-width: 353px) {
+  .side-nav {
+    height: 100%; }
+
+  .right-container {
+    height: 100%; }
+
+  body {
+    overflow-x: hidden; }
+
+  .side-nav__content ul {
+    line-height: 40px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; }
+  .side-nav__content ul > li:hover {
+    color: white;
+    cursor: pointer;
+    width: 100%; }
+  .side-nav__content .side-nav__heading {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    line-height: 80px; } }
+
 /*# sourceMappingURL=style.css.map */
