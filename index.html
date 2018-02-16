@@ -9,15 +9,21 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body style="padding: 0px;">
-      <div class="col-3-12 side-nav shadow">
+        <div class="col-3-12 side-nav shadow">
          <div class="side-nav__content ">
-            <ul>
-               <li class="side-nav__heading">
+  <span class="showDiv menu" onclick="showMenu()">
+                     <i class="fa fa-bars" ></i>
+                     &nbsp;MENU 
+                </span> 
+            <ul class="hideDiv--mobile menu-toggle">
+              
+
+               <li class="side-nav__heading hideDiv">
                   <div class="col-9-12">
-                     MENU
+                     &nbsp;MENU  
                   </div>
-                  <div class="col-3-12">
-                     <i class="fa  fa-cog"></i>
+                  <div class="col-3-12 hideDiv">
+                     <i class="fa  fa-cog "   ></i>
                   </div>
                </li>
                <li>Overview</li>
@@ -26,23 +32,23 @@
                   <div class="col-9-12">
                      Your Staff
                   </div>
-                  <div class="col-3-12">
-                     <span class="side-nav__label">23</span>
+                  <div class="col-3-12 hideDiv">
+                     <span class="side-nav__label ">23</span>
                   </div>
                </li>
                <li>Analytics & Targeting</li>
                <li>What's New?</li>
             </ul>
          </div>
-         <hr class="side-nav__hr">
+         <hr class="side-nav__hr hideDiv--mobile menu-toggle">
          <div class="side-nav__content">
-            <ul>
+            <ul class="hideDiv--mobile menu-toggle">
                <li class="side-nav__heading">
                   <div class="col-9-12">
                      DASHBOARD
                   </div>
-                  <div class="col-3-12">
-                     <i class="fa  fa-cog"></i>
+                  <div class="col-3-12 hideDiv">
+                     <i class="fa  fa-cog " ></i>
                   </div>
                </li>
                <li>Messages</li>
@@ -223,5 +229,37 @@
             <h5 class="flex-container__text" >Vera Jefferson</h5>
          </div>
       </div>
+      <script type="text/javascript">
+         var flag = 1;
+         function showMenu() {
+            // body...
+            console.log("CLICKED");
+            var block = document.getElementsByClassName('menu-toggle');
+          
+           
+            if(flag) 
+            {
+            for ( var i = 0;i<block.length;i++)
+            { var classList = block[i].classList;
+               console.log("TWO before : " + classList);
+
+                 classList.add("hideDiv--mobile--show");
+               console.log("ONE");
+            }
+         }
+           else
+           {
+            for ( var i = 0;i<block.length;i++)
+            {
+               var classList = block[i].classList;
+                 classList.remove("hideDiv--mobile--show");
+               console.log("TWO");            
+           }
+         }
+            flag=!flag;
+
+      }
+           
+      </script>
    </body>
 </html>
