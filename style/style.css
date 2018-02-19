@@ -121,9 +121,23 @@
 .fa-bars {
   display: none; }
 
+.featuredImage {
+  width: 397px; }
+
 @media (max-width: 353px) {
+  .flex-table--alpha, .flex-table--beta, .flex-table--gamma {
+    text-align: center;
+    line-height: 10px;
+    padding-left: 27%; }
+
+  .featuredImage {
+    width: 200px !important; }
+
   .showDiv {
     display: inline-block; }
+
+  .hideDiv {
+    display: none; }
 
   .menu {
     color: white;
@@ -141,9 +155,6 @@
   body {
     overflow-x: hidden; }
 
-  .hideDiv {
-    display: none; }
-
   .side-nav__content ul {
     line-height: 40px;
     font-size: 18px; }
@@ -157,6 +168,17 @@
     display: none; }
 
   .hideDiv--mobile--show {
-    display: block; } }
+    display: block; }
+
+  .right-container__image--circular {
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: 20%; }
+
+  .right-container__heading {
+    display: block;
+    font-size: 16px;
+    padding-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
