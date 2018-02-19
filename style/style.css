@@ -1,8 +1,8 @@
 .side-nav {
-  background-color: #4b4b6d;
   height: 100vh;
   padding: 0px;
   margin-top: -8px;
+  background-color: #4b4b6d;
   margin-left: -8px; }
 
 .shadow {
@@ -29,6 +29,9 @@
 .fa-cog {
   cursor: pointer; }
 
+.fa-bars {
+  display: none; }
+
 .side-nav__label {
   background-color: #a1a5ad;
   color: #1c1c2b;
@@ -42,22 +45,22 @@
   color: #a1a5ad; }
 
 .right-container {
-  background-color: #313147;
   height: 100vh;
   padding: 0px;
-  margin-top: -8px; }
+  margin-top: -8px;
+  background-color: #313147; }
 
 .flex-container > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: #f1f1f1;
   width: 126px;
+  height: 175px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 175px;
   border-radius: 5px;
   -webkit-box-shadow: -4px 7px 28px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -4px 7px 28px -4px rgba(0, 0, 0, 0.75);
@@ -72,7 +75,8 @@
   display: inline;
   background-color: #4b4b6d;
   padding: 5px;
-  color: white; }
+  color: white;
+  font-family: 'Lato', sans-serif; }
 
 .right-container__navigate:hover {
   background-color: #a1a5ad;
@@ -112,13 +116,7 @@
 .flex-container__row {
   margin-top: 70px; }
 
-.hola {
-  color: red; }
-
 .showDiv {
-  display: none; }
-
-.fa-bars {
   display: none; }
 
 .featuredImage {
